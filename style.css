@@ -504,7 +504,7 @@ li a:hover{ /* Action */
 
 .proj4 .gallery-item, .proj5 .gallery-item {
   width: 260px;
-  height: fit-content;
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -513,7 +513,7 @@ li a:hover{ /* Action */
 
 #box1 .gallery-item {
   width: 535px;
-  height: fit-content;
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -522,7 +522,7 @@ li a:hover{ /* Action */
 
 #box2 .gallery-item {
   width: 350px;
-  height: fit-content;
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
