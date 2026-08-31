@@ -495,7 +495,7 @@ li a:hover{ /* Action */
 .gallery-item {
   position: relative;
   width: auto;
-  height: 350px;
+  height: 345px;
   cursor: pointer; /* click-on cursor */
   transition: transform 0.5s ease;
   margin: 5px;
