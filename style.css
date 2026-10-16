@@ -185,7 +185,8 @@ li a:hover{ /* Action */
 
 /* Introduction */
 .intro { /* Intro block */
-  background-image: linear-gradient(rgb(51, 14, 67), rgba(236, 164, 212, 0.582)), url('media/wallpaper.png');
+  /* Paths in CSS are relative to this stylesheet's location. */
+  background-image: linear-gradient(rgb(51, 14, 67), rgba(236, 164, 212, 0.582)), url("../media/wallpaper.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
