@@ -518,6 +518,11 @@ li a:hover{ /* Action */
   display: inline;
 }
 
+#xxl .gallery-item{
+  width: 340px;
+  height: auto;
+}
+
 #box1 .gallery-item {
   width: 535px;
   height: auto;
@@ -767,5 +772,4 @@ Vertical centering can be achieved using modern layout techniques:
 Flexbox - Use align-items: center
 Grid - Use place-items: center
 Position + Transform - For elements of unknown dimensions
-
 */
