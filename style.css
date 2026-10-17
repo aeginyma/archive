@@ -88,6 +88,16 @@ body:has(#box6 .modal.show) #box1, body:has(#box6 .modal.show) #box2, body:has(#
   pointer-events: none;
 }
 
+body:has(#box7 .modal.show) #box8 {
+  z-index: -10;
+  pointer-events: none;
+}
+
+body:has(#box8 .modal.show) #box7 {
+  z-index: -10;
+  pointer-events: none;
+}
+
 /* Navigation bar */ 
 ul { /* Header bar */ 
   list-style-type: none;
@@ -517,7 +527,7 @@ li a:hover{ /* Action */
   display: inline;
 }
 
-#xxl .gallery-item{
+#box7 .gallery-item{
   height: auto;
   width: 350px;
 }
@@ -749,7 +759,10 @@ footer .social-icons svg {
 
 @media (max-width: 768px) {
   html {
-    zoom: 0.8; /* Emulates Safari's native 50% page zoom */
+    zoom: 0.7; /* Emulates Safari's native 50% page zoom */
+  }
+  .proj5, .proj4 {    
+    zoom: 2.5; /* Emulates Safari's native 50% page zoom */
   }
 }
 
