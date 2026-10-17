@@ -25,9 +25,9 @@
     <div class="proj4" id="box7">
       <!-- Gallery -->
       <div class="gallery">
-        <video src="../media/rain_fixed.mp4" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal30')"></video>
-        <video src="../media/100t_hype.mp4" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal31')"></video>
-        <video src="../media/pulse3_v2.mp4" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal32')"></video>
+        <video src="../media/rain_fixed.mp4" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal30')"></video>
+        <video src="../media/100t_hype.mp4" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal31')"></video>
+        <video src="../media/pulse3_v2.mp4" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal32')"></video>
       </div>
       <div id="modal30" class="modal">
         <span class="close" onclick="closeModal('modal30')">&times;</span>
@@ -47,10 +47,10 @@
       <!-- Gallery -->
       <div>
       <div class="gallery">
-        <video src="../media/edit1.mov" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal3')"></video>
-        <video src="../media/edit2.mov" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal4')"></video>
-        <video src="../media/gizmy.mp4" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal5')"></video>
-        <video src="../media/xqc2.mp4" muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal6')"></video>
+        <video src="../media/edit1.mov" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal3')"></video>
+        <video src="../media/edit2.mov" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal4')"></video>
+        <video src="../media/gizmy.mp4" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal5')"></video>
+        <video src="../media/xqc2.mp4" autoplay muted loop playsinline preload="metadata" class="gallery-item" onclick="openModal('modal6')"></video>
       </div>
       <div id="modal3" class="modal">
         <span class="close" onclick="closeModal('modal3')">&times;</span>
@@ -91,7 +91,6 @@
   </footer>
 
 <script>
-
 function openModal(modalId) {
   let modal = document.getElementById(modalId);
   document.querySelectorAll('.gallery-item').forEach(function (video) {
@@ -111,6 +110,9 @@ function closeModal(modalId) {
   modal.classList.remove("show");
   setTimeout(function () {
     modal.style.display = "none";
+    document.querySelectorAll('.gallery-item').forEach(function (video) {
+      video.play().catch(function () {});
+    });
   }, 300);
 }
 </script>
