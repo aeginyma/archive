@@ -771,13 +771,6 @@ footer .social-icons svg {
     zoom: 2;
   }
 
-  /* Force all videos, iframes, images, and media to stay within screen bounds */
-  video, iframe, img, object, embed {
-    zoom: 1;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: fit-content !important;
-  }
 }
 
 /* Horizontal Alignment

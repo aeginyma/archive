@@ -91,15 +91,6 @@
   </footer>
 
 <script>
-document.querySelectorAll('.gallery-item').forEach(function (video) {
-  video.addEventListener('mouseenter', function () {
-    video.play().catch(function () {});
-  });
-  video.addEventListener('mouseleave', function () {
-    video.pause();
-    video.currentTime = 0;
-  });
-});
 
 function openModal(modalId) {
   let modal = document.getElementById(modalId);
