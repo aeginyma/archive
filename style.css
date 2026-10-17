@@ -768,9 +768,11 @@ footer .social-icons svg {
   }
 
   video, iframe, .modal-content {
-    zoom: 1;
-    width: min-content;
-    height: min-content;
+    zoom: 1 !important;
+    box-sizing: border-box !important;
+    width: min-content !important;
+    height: min-content !important;
+    margin: 0 auto !important;
   }
 }
 
