@@ -211,7 +211,6 @@ li a:hover{ /* Action */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.392);
   font-weight: 250;
   letter-spacing: 1px;
-  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -746,6 +745,12 @@ footer .social-icons svg {
 
 #indexf {
   background-color: rgb(40, 40, 40)
+}
+
+@media (max-width: 768px) {
+  html {
+    zoom: 0.8; /* Emulates Safari's native 50% page zoom */
+  }
 }
 
 /* Horizontal Alignment
