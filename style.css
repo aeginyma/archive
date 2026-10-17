@@ -766,6 +766,10 @@ footer .social-icons svg {
   h1, p {
     zoom: 0.7 !important;
   }
+
+  .intro { /* Intro block */
+  margin-top: 100px !important;
+  }
 }
 
 /* Horizontal Alignment
