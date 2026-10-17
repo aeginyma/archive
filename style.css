@@ -185,8 +185,7 @@ li a:hover{ /* Action */
 
 /* Introduction */
 .intro { /* Intro block */
-  /* Paths in CSS are relative to this stylesheet's location. */
-  background-image: linear-gradient(rgb(51, 14, 67), rgba(236, 164, 212, 0.582)), url("../media/wallpaper.png");
+  background: linear-gradient(rgb(51, 14, 67), rgba(236, 164, 212, 0.582)), url("wallpaper.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -520,8 +519,8 @@ li a:hover{ /* Action */
 }
 
 #xxl .gallery-item{
-  width: 340px;
   height: auto;
+  width: 350px;
 }
 
 #box1 .gallery-item {
