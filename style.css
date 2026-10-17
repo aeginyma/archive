@@ -761,6 +761,13 @@ footer .social-icons svg {
   background-color: rgb(40, 40, 40)
 }
 
+/* --- UNIVERSAL MOBILE OVERFLOW FIX --- */
+@media (max-width: 768px) {
+  body {
+    zoom: 0.7;
+  }
+}
+
 /* Horizontal Alignment
 There are several ways to horizontally align elements:
 
