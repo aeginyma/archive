@@ -767,7 +767,7 @@ footer .social-icons svg {
     zoom: 0.7;
   }
 
-  video, iframe, .modal-content {
+  .modal-content {
     zoom: 1 !important;
     box-sizing: border-box !important;
     width: min-content !important;
