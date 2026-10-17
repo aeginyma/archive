@@ -225,7 +225,7 @@ li a:hover{ /* Action */
 }
 
 .intro p {
-  max-width: 600px;
+  max-width: 90%;
 }
 
 .intro2 p, .intro3 p {
@@ -763,8 +763,14 @@ footer .social-icons svg {
 
 /* --- UNIVERSAL MOBILE OVERFLOW FIX --- */
 @media (max-width: 768px) {
-  body {
+  .proj {
     zoom: 0.7;
+  }
+
+  video, iframe, .modal-content {
+    zoom: 1;
+    width: min-content;
+    height: min-content;
   }
 }
 
